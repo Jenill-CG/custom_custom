@@ -23,7 +23,7 @@ parameter_descriptions = {
     'A5': "District + Block + School + Grade + Student",
     'A6': "Partner + Block + School + Grade + Student",
     'A7': "Partner + District + School + Grade + Student",
-    'A8': "Partner + District + Block + School + Grade + Student"
+    'A8': "Student"
 }
 
 # Define the new mapping for parameter sets
@@ -35,7 +35,7 @@ parameter_mapping = {
     'A5': "District_ID,Block_ID,School_ID,Grade,student_no",
     'A6': "Partner_ID,Block_ID,School_ID,Grade,student_no",
     'A7': "Partner_ID,District_ID,School_ID,Grade,student_no",
-    'A8': "Partner_ID,District_ID,Block_ID,School_ID,Grade,student_no"
+    'A8': "student_no"
 }
 
 # Dropdown for selecting file naming format
