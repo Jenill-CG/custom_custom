@@ -279,8 +279,8 @@ def create_attendance_pdf(pdf, column_widths, column_names, image_path, info_val
         pdf.cell(72, 0.5, 'STUDENT NAME', border='LR', align='C')
         pdf.cell(12, 0.5, 'GENDER', border='LR', align='C')
         pdf.cell(18, 0.5, 'AGE', border='LR', align='C')
-        pdf.cell(28, 0.25, 'HOME LANGUAGE ', border='LR', align='C')
-        pdf.cell(28, 0.25, 'HOME LANGUAGE', border='LR', align='C')
+        pdf.cell(28, 0.5, 'HOME LANGUAGE ', border='LR', align='C')
+        pdf.cell(28, 0.5, 'HOME LANGUAGE', border='LR', align='C')
         # pdf.cell(12, 0.5, 'SECTION', border='LR', align='C')
         # pdf.cell(12, 0.5, 'SESSION', border='LR', align='C')  # End of the row
 
@@ -294,8 +294,8 @@ def create_attendance_pdf(pdf, column_widths, column_names, image_path, info_val
         pdf.cell(72, 4.5, '', border='LBR', align='C')  # Empty cell under STUDENT NAME
         pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under GENDER
         pdf.cell(18, 4.5, '', border='LBR', align='C')  # Empty cell under AGE
-        pdf.cell(28, 3.25, 'OF STUDENT', border='LBR', align='C')  # Empty cell under SUBJECT 1
-        pdf.cell(28, 3.25, 'OF ENUMERATOR', border='LBR', align='C')  # Empty cell under SUBJECT 2
+        pdf.cell(28, 4.5, 'OF STUDENT', border='LBR', align='C')  # Empty cell under SUBJECT 1
+        pdf.cell(28, 4.5, 'OF ENUMERATOR', border='LBR', align='C')  # Empty cell under SUBJECT 2
         # pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under SECTION
         # pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under SESSION
         pdf.ln(4.5)
