@@ -745,14 +745,14 @@ def main():
                 'SESSION': 12
             }
         else:
-            column_names = ['STUDENT ID', 'STUDENT NAME', 'GENDER', 'AGE', 'SUBJECT 1', 'SUBJECT 2']
+            column_names = ['STUDENT ID', 'STUDENT NAME', 'GENDER', 'AGE', 'HOME LANGUAGE ', 'HOME LANGUAGE']
             column_widths = {
                 'STUDENT ID': 15,
                 'STUDENT NAME': 72,
                 'GENDER': 18,
                 'AGE': 18,
-                'SUBJECT 1': 28,
-                'SUBJECT 2': 28
+                'HOME LANGUAGE ': 28,
+                'HOME LANGUAGE': 28
             }
 
         # selected_option = st.selectbox("➡️ Choose your file naming format", list(naming_options.keys()))
