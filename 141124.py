@@ -751,7 +751,7 @@ def main():
                 'STUDENT ID': 15,
                 'STUDENT NAME': 72,
                 'AGE': 12,
-                'TAB ID': 18,
+                'AGE': 18,
                 'SUBJECT 1': 16,
                 'SUBJECT 2': 16,
                 'SECTION': 12,
