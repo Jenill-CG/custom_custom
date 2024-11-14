@@ -745,7 +745,7 @@ def main():
                 'SESSION': 12
             }
         else:
-            column_names = ['S.NO', 'STUDENT ID', 'STUDENT NAME', 'GENDER', 'AGE', 'SUBJECT 1', 'SUBJECT 2', 'SECTION', 'SESSION']
+            column_names = ['S.NO', 'STUDENT ID', 'STUDENT NAME', 'GENDER', 'AGE', 'SUBJECT 1', 'SUBJECT 2']
             column_widths = {
                 'S.NO': 6,
                 'STUDENT ID': 15,
