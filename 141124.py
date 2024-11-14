@@ -279,10 +279,10 @@ def create_attendance_pdf(pdf, column_widths, column_names, image_path, info_val
         pdf.cell(72, 0.5, 'STUDENT NAME', border='LR', align='C')
         pdf.cell(12, 0.5, 'GENDER', border='LR', align='C')
         pdf.cell(18, 0.5, 'AGE', border='LR', align='C')
-        pdf.cell(16, 0.5, 'SUBJECT 1', border='LR', align='C')
-        pdf.cell(16, 0.5, 'SUBJECT 2', border='LR', align='C')
-        pdf.cell(12, 0.5, 'SECTION', border='LR', align='C')
-        pdf.cell(12, 0.5, 'SESSION', border='LR', align='C')  # End of the row
+        pdf.cell(28, 0.5, 'SUBJECT 1', border='LR', align='C')
+        pdf.cell(28, 0.5, 'SUBJECT 2', border='LR', align='C')
+        # pdf.cell(12, 0.5, 'SECTION', border='LR', align='C')
+        # pdf.cell(12, 0.5, 'SESSION', border='LR', align='C')  # End of the row
 
         # Move to the next line
         pdf.ln(0.5)
@@ -294,10 +294,10 @@ def create_attendance_pdf(pdf, column_widths, column_names, image_path, info_val
         pdf.cell(72, 4.5, '', border='LBR', align='C')  # Empty cell under STUDENT NAME
         pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under GENDER
         pdf.cell(18, 4.5, '', border='LBR', align='C')  # Empty cell under AGE
-        pdf.cell(16, 4.5, 'Present/Absent', border='LBR', align='C')  # Empty cell under SUBJECT 1
-        pdf.cell(16, 4.5, 'Present/Absent', border='LBR', align='C')  # Empty cell under SUBJECT 2
-        pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under SECTION
-        pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under SESSION
+        pdf.cell(28, 4.5, 'Present/Absent', border='LBR', align='C')  # Empty cell under SUBJECT 1
+        pdf.cell(28, 4.5, 'Present/Absent', border='LBR', align='C')  # Empty cell under SUBJECT 2
+        # pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under SECTION
+        # pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under SESSION
         pdf.ln(4.5)
     # pdf.ln(4.5)
 
@@ -752,10 +752,8 @@ def main():
                 'STUDENT NAME': 72,
                 'GENDER': 12,
                 'AGE': 18,
-                'SUBJECT 1': 16,
-                'SUBJECT 2': 16,
-                'SECTION': 12,
-                'SESSION': 12
+                'SUBJECT 1': 28,
+                'SUBJECT 2': 28
             }
 
         # selected_option = st.selectbox("➡️ Choose your file naming format", list(naming_options.keys()))
