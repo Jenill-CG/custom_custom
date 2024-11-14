@@ -262,10 +262,10 @@ def create_attendance_pdf(pdf, column_widths, column_names, image_path, info_val
 
     elif format_option == 'Digital Assessment':
         # Add the Title and Subtitle for digital format
-        pdf.cell(6, 4, '', border='LTR', align='C')
+        # pdf.cell(6, 4, '', border='LTR', align='C')
         pdf.cell(15, 4, '', border='LTR', align='C')
         pdf.cell(72, 4, '', border='LTR', align='C')
-        pdf.cell(12, 4, '', border='LTR', align='C')
+        pdf.cell(18, 4, '', border='LTR', align='C')
         pdf.cell(18, 4, '', border='LTR', align='C')
         pdf.cell(28, 4, '', border='LTR', align='C')
         pdf.cell(28, 4, '', border='LTR', align='C')
@@ -273,11 +273,11 @@ def create_attendance_pdf(pdf, column_widths, column_names, image_path, info_val
         # pdf.cell(12, 4, '', border='LTR', align='C')  # End of the row
 
         pdf.ln(4)
-        # First row of headers
-        pdf.cell(6, 0.5, 'S.NO', border='LR', align='C')
+        # # First row of headers
+        # pdf.cell(6, 0.5, 'S.NO', border='LR', align='C')
         pdf.cell(15, 0.5, 'STUDENT ID', border='LR', align='C')
         pdf.cell(72, 0.5, 'STUDENT NAME', border='LR', align='C')
-        pdf.cell(12, 0.5, 'GENDER', border='LR', align='C')
+        pdf.cell(18, 0.5, 'GENDER', border='LR', align='C')
         pdf.cell(18, 0.5, 'AGE', border='LR', align='C')
         pdf.cell(28, 0.5, 'HOME LANGUAGE ', border='LR', align='C')
         pdf.cell(28, 0.5, 'HOME LANGUAGE', border='LR', align='C')
@@ -288,11 +288,11 @@ def create_attendance_pdf(pdf, column_widths, column_names, image_path, info_val
         pdf.ln(0.5)
 
         # Second row of headers (merged cells)
-        pdf.set_font("Arial", 'B', size=5)
-        pdf.cell(6, 4.5, '', border='LBR', align='C')  # Empty cell under S.NO
+        # pdf.set_font("Arial", 'B', size=5)
+        # pdf.cell(6, 4.5, '', border='LBR', align='C')  # Empty cell under S.NO
         pdf.cell(15, 4.5, '', border='LBR', align='C')  # Empty cell under STUDENT ID
         pdf.cell(72, 4.5, '', border='LBR', align='C')  # Empty cell under STUDENT NAME
-        pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under GENDER
+        pdf.cell(18, 4.5, '', border='LBR', align='C')  # Empty cell under GENDER
         pdf.cell(18, 4.5, '', border='LBR', align='C')  # Empty cell under AGE
         pdf.cell(28, 4.5, 'OF STUDENT', border='LBR', align='C')  # Empty cell under SUBJECT 1
         pdf.cell(28, 4.5, 'OF ENUMERATOR', border='LBR', align='C')  # Empty cell under SUBJECT 2
