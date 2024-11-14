@@ -750,7 +750,7 @@ def main():
                 'S.NO': 6,
                 'STUDENT ID': 15,
                 'STUDENT NAME': 72,
-                'AGE': 12,
+                'GENDER': 12,
                 'AGE': 18,
                 'SUBJECT 1': 16,
                 'SUBJECT 2': 16,
