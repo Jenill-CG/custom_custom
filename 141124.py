@@ -747,10 +747,10 @@ def main():
         else:
             column_names = ['S.NO', 'STUDENT ID', 'STUDENT NAME', 'GENDER', 'AGE', 'SUBJECT 1', 'SUBJECT 2']
             column_widths = {
-                'S.NO': 6,
+                # 'S.NO': 6,
                 'STUDENT ID': 15,
                 'STUDENT NAME': 72,
-                'GENDER': 12,
+                'GENDER': 18,
                 'AGE': 18,
                 'SUBJECT 1': 28,
                 'SUBJECT 2': 28
