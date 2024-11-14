@@ -294,8 +294,8 @@ def create_attendance_pdf(pdf, column_widths, column_names, image_path, info_val
         pdf.cell(72, 4.5, '', border='LBR', align='C')  # Empty cell under STUDENT NAME
         pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under GENDER
         pdf.cell(18, 4.5, '', border='LBR', align='C')  # Empty cell under AGE
-        pdf.cell(28, 4.5, 'STUDENT', border='LBR', align='C')  # Empty cell under SUBJECT 1
-        pdf.cell(28, 4.5, 'ENUMERATOR', border='LBR', align='C')  # Empty cell under SUBJECT 2
+        pdf.cell(28, 4.5, 'OF STUDENT', border='LBR', align='C')  # Empty cell under SUBJECT 1
+        pdf.cell(28, 4.5, 'OF ENUMERATOR', border='LBR', align='C')  # Empty cell under SUBJECT 2
         # pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under SECTION
         # pdf.cell(12, 4.5, '', border='LBR', align='C')  # Empty cell under SESSION
         pdf.ln(4.5)
